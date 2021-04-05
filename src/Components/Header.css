@@ -1,0 +1,13 @@
+.header {
+    padding: 10px 80px;
+    background-color: #ff5000;
+    box-sizing: border-box;
+    height: 56px;
+    position: relative;
+}
+
+.finpro {
+    margin: 0;
+    color:beige;
+    font-size: 25px;
+}

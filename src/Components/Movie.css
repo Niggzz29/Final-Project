@@ -1,0 +1,7 @@
+.movie {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    margin: 1em;
+    cursor: pointer;
+}

@@ -28,6 +28,13 @@
   color: #61dafb;
 }
 
+.App-intro {
+  font-size: 32px;
+  color: #2e67a0;
+  font-weight: 600;
+  padding: 8px 80px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
