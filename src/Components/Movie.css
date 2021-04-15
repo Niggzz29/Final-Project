@@ -1,7 +1,38 @@
-.movie {
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 6rem;
+}
+
+.movies>.movie {
     width: 250px;
+    padding-bottom: 11rem;
     height: 250px;
     position: relative;
     margin: 1em;
     cursor: pointer;
+    transition: all .3s;
+}
+
+div {
+    display: block;
+}
+
+.movies>.movie>div {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.title-movie {
+    position: absolute;
+    box-sizing: border-box;
+    width: 250px;
+    margin: 0;
+    text-align: center;
+    padding: 12px 0;
+    font-weight: 600;
+    color: #fff;
+    background-color: #ff5000;
 }

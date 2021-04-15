@@ -10,6 +10,11 @@ input[type=text] {
     
 }
 
+.search-bar {
+    display: inline;
+    float: right;
+}
+
 input[type=submit] {
     border: none;
     padding: 8px 14px;

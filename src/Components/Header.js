@@ -4,8 +4,10 @@ export const MovieHeader = (props) => {
     return (
         <>
             <div className="row header">
-                <h1 className="finpro">{props.header}</h1>
+                <span className="finpro">{props.header}</span>
+                {props.children}
             </div>
+
         </>
     );
 };

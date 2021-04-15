@@ -32,6 +32,7 @@
   font-size: 32px;
   color: #2e67a0;
   font-weight: 600;
+  margin-block-end: -1rem;
   padding: 8px 80px;
 }
 

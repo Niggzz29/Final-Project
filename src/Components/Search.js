@@ -4,19 +4,18 @@ import "./Search.css";
 const SearchBox = (props) => {
     return (
         <>
-            <div className="col">
-                <input 
+            <div className="search-bar">
+                <input
                     type="text"
                     value={props.value}
                     onChange={(e) => props.setQuery(e.target.value)}
                     placeholder="Search..." />
-                <input 
+                <input
                     type="submit"
                     value="SEARCH" />
             </div>
         </>
     );
 };
-
 
 export default SearchBox;

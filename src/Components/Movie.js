@@ -1,18 +1,29 @@
 import React from "react";
 import "./Movie.css";
+import { Layout, Breadcrumb, Col, Row, Input } from "antd";
 
 export const MovieList = (props) => {
+    console.log(props);
     return (
         <>
-            {props.dataMovie.map((v) => {
-                <div className="image-container d-flex justify-content-start m-3 movie">
-                    <img 
-                        width={200} 
-                        src={"https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg"}>
-                    </img>
-                    <p>{v.Title}</p>
-                </div>
-            })}
+            <div className="movies row p-5">
+                {props.dataMovie && props.dataMovie.map((v) => {
+                    return (
+                        <div className="movie col-md-3">
+                            <div>
+                                <p className='title-movie'>
+
+                                    <img
+                                        width={250}
+                                        src={v.Poster}>
+                                    </img>
+
+                                    {v.Title}</p>
+                            </div>
+                        </div>
+                    )
+                })}
+            </div>
         </>
     );
 };
